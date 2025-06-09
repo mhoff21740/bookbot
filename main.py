@@ -1,14 +1,15 @@
 
 
-from stats import get_book_words
+
+from stats import final_report
+
 
 
 
 def main():
-    book_text=get_book_words("frankenstein.txt")
-    print (f"{book_text} words found in the document.")
-
-
+    book=final_report("frankenstein.txt")
+    print(book)
+   
 
 
 main()
