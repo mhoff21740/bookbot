@@ -1,5 +1,7 @@
-
-
+import sys
+if len(sys.argv) != 2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
 
 from stats import final_report
 
@@ -7,7 +9,7 @@ from stats import final_report
 
 
 def main():
-    book=final_report("frankenstein.txt")
+    book=final_report(book=sys.argv[1])
     print(book)
    
 

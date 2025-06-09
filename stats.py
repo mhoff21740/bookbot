@@ -1,6 +1,6 @@
 
 def get_book_text(book):
-    book_text= f"books/{book}"
+    book_text= f"{book}"
     with open(book_text) as f:
         text = f.read()
     return text
